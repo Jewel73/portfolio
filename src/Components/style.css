@@ -1,0 +1,13 @@
+.myClass.item{
+    cursor: pointer;
+}
+
+
+.navbar {
+    background-color: #133847;
+    
+}
+
+.navbar.ui.menu.item{
+    color: white;
+}

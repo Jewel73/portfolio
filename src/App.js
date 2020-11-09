@@ -1,30 +1,12 @@
 
 import React, {useState} from 'react'
 import {Menu, Input, Container} from 'semantic-ui-react';
+import NavBar from './Components/NavBar';
+import './Components/style.css'
 
 function Apps() {
   return (
-    <Container>
-      <Menu secondary ui menu>
-      <Menu.Item color='red' item
-        name='home'
-      />
-      <Menu.Item
-        name='messages'
-      />
-      <Menu.Item
-        name='friends'
-      />
-      <Menu.Menu position='right'>
-        <Menu.Item>
-          <Input icon='search' placeholder='Search...' />
-        </Menu.Item>
-        <Menu.Item
-          name='logout'
-        />
-      </Menu.Menu>
-    </Menu>
-    </Container>
+    <NavBar />
   )
 }
 
