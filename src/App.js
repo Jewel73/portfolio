@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React, {useState} from 'react'
+import {Menu, Input, Container} from 'semantic-ui-react';
+
+function Apps() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Container>
+      <Menu secondary ui menu>
+      <Menu.Item color='red' item
+        name='home'
+      />
+      <Menu.Item
+        name='messages'
+      />
+      <Menu.Item
+        name='friends'
+      />
+      <Menu.Menu position='right'>
+        <Menu.Item>
+          <Input icon='search' placeholder='Search...' />
+        </Menu.Item>
+        <Menu.Item
+          name='logout'
+        />
+      </Menu.Menu>
+    </Menu>
+    </Container>
+  )
 }
 
-export default App;
+export default Apps;
